@@ -1,0 +1,8 @@
+//get user data set up character (change state/ set dom)
+//store user data and character in local storage (change state)
+//read user quest line (set dom)
+//user sees map and chooses quest (set dom)
+//quest presents three options for user to choose (change state)
+//user accumulates merit and wisdom data stored in local storage (change state)
+//quest result display (change state and dom)
+//quest totals tally end of game (change state and dom)
