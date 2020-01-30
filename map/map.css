@@ -1,0 +1,27 @@
+#pilgrimage {
+    position: relative;
+    background-image: url("../assets/kailash-inner-kora-trek.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    Height: calc(90vw * 642/980);
+    margin: auto;
+}
+
+.quest {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font: Garamond;
+    font-size: 24px;
+    
+}
+.quest.completed {
+    color: beige;
+    font-size: 12px;
+
+}
+.quest.completed:after {
+    content: "?"
+    /* what the hell is this check thingy? */
+}
