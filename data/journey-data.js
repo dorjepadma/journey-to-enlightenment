@@ -97,6 +97,6 @@ const journey = [
     retreat,
     monastery,
     householder,
-]
+];
 
 export default journey;

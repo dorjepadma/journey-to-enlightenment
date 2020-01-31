@@ -1,0 +1,33 @@
+.text-prompt {
+    display: block;
+    margin: 10px 0;
+}
+
+.text-prompt label {
+    display: block;
+    margin-bottom: 5p;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.text-prompt input {
+    display: block;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#yogis {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#yogis label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 10px;
+}
+#yogis input, #yogis img {
+    margin: 0 7px;
+}
