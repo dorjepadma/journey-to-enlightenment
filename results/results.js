@@ -16,7 +16,7 @@ const wisdomResult = scoreWisdom(user.wisdom);
 const meritMessage = meritMessages[meritResult];
 
 let wisdomMessages = null;
-if (meritResult === 'dead') {
+if (meritResult === 'samsara') {
     wisdomMessages = deadWisdomMessages;
 }
 else {

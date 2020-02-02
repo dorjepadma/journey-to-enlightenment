@@ -1,7 +1,7 @@
-import { getUser } from './api.js';
-import { samsara } from './samsara.js';
+import getUser from '../data/api.js';
+import isDead from './is-dead.js';
 
-function (loadProfile){
+function loadProfile() {
     // reference needed DOM elements
     const name = document.getElementById('name');
     const yogi = document.getElementById('yogi');
@@ -17,13 +17,11 @@ function (loadProfile){
     //copying object from Dom to Properties:
     name.textContent = user.name;
     yogi.src = 'assets/yogi/' + user.incarnation + '.png';
+    wisdom.textContent = user.wisdom;
 // if they have died, say so in header.
-if (isDead(user)) {
-    hp.textContent = 'you have been reborn in Samsara';
-} else { merit.textContent = user.merit;
- }
+    if (isDead(user)) {
+        merit.textContent = 'you have been reborn in Samsara';
+    } else { merit.textContent = user.merit;
+    }
 }
 export default loadProfile;
-
-
-})

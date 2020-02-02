@@ -5,7 +5,6 @@ function createCompletedJourney(journey) {
 
     span.style.top = journey.map.top;
     span.style.left = journey.map.left;
-
     span.textContent = journey.title;
     return span;
 }

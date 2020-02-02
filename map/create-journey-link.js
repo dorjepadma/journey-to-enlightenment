@@ -2,7 +2,7 @@
 
 function createJourneyLink(journey) {
     const link = document.createElement('a');
-    link.classListadd('journey');
+    link.classListAdd('journey');
 
     link.href = '../journey/?id' + journey.id;
     link.style.top = journey.map.top;
