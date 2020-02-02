@@ -10,4 +10,7 @@ export function getUser() {
     if (!json) return null;
     const user = JSON.parse(json);
     return user;
-}// how is this getting the data for the function? oh, it operates as the function.
+}
+
+// how is this getting the data for the function? oh, it operates as the function.
+// export default getUser;

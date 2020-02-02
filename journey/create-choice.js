@@ -1,5 +1,5 @@
-// journey function to create the journey
-function createChoice {
+// choice function to create the journey
+function createChoice(choice) {
     const label = document.createElement('label');
     label.classList.add('choice');
 
@@ -12,7 +12,7 @@ function createChoice {
 // appends to journeys
     const description = document.getElementById('span');
     description.textContent = choice.description;
-    label.appendChjild(description);
+    label.appendChild(description);
 
     return label;
 }

@@ -1,5 +1,5 @@
 
-  
+
 import getUser from '../data/api.js';
 import journeys from '../data/journey-data.js';
 import loadProfile from '../common/load-profile.js';
@@ -11,7 +11,7 @@ import isDead from '../common/is-dead.js';
 loadProfile(); // i predict we'll load the header on every page but the home page
 
 // go grab the user from localStorage
-const user = getUser();
+const user = getUser;
 
 // if they're dead, or if they've completed all the quests
 if (isDead(user) || hasCompletedAllJourney(journeys, user)) {
