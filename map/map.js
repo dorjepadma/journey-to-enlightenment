@@ -1,6 +1,6 @@
 
 
-import getUser from '../data/api.js';
+import { getUser } from '../data/api.js';
 import journeys from '../data/journey-data.js';
 import loadProfile from '../common/load-profile.js';
 import createJourneyLink from './create-journey-link.js';

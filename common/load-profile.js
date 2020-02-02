@@ -1,4 +1,4 @@
-import getUser from '../data/api.js';
+import { getUser } from '../data/api.js'; 
 import isDead from './is-dead.js';
 
 function loadProfile() {
@@ -11,7 +11,7 @@ function loadProfile() {
 // initialize and parse from local storage. Parse turns a string into an object.
     const user = getUser;
 // here we determine if there is a user, and return to user page if no user. I do not understand the necessity of this.
-    if (user) {
+    if (!user) {
         window.location = './';
     }
     //copying object from Dom to Properties:

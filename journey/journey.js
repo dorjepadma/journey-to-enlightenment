@@ -1,7 +1,7 @@
 //load all global journey data
 import loadProfile from '../common/load-profile.js';
-import {getUser, saveUser} from '../data/api.js';
-import journey from '../data/journey-data.js';
+import { getUser, saveUser } from '../data/api.js';
+import journeys from '../data/journey-data.js';
 import createChoice from './create-choice.js';
 import findById from '../common/find-by-id.js';
 import scoreJourney from './journey-score.js';

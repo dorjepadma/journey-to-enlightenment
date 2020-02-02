@@ -21,7 +21,7 @@
     font-size: 12px;
 
 }
-.journey.completed:after {
+.completed:after {
     content: "?"
     /* what the hell is this check thingy? */
 }
