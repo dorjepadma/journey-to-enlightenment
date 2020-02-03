@@ -3,8 +3,8 @@ const retreat = {
     id: 'retreat',
     title: 'Mountain Retreat',
     map: {
-        top:'85%',
-        left:'44%',
+        top:'10%',
+        left:'60%',
     },
     image: 'yogi.jpg',
     audio: 'mountain.wav',
@@ -34,11 +34,11 @@ const monastery = {
     id: 'monastery',
     title: 'join the monastery',
     map: {
-        top:'50',
-        left:'64%',
+        top:'30',
+        right:'60%',
     },
-    image: '.jpg',
-    audio: 'tibetanchant.wav',
+    image: '../assets/journey/monks monlam.jpg',
+    audio: '../assets/journey/tibetanchant.wav',
     description:
         `You have joined a monastery to accumulate merit and wisdom and study at the feet of a great master. You have become skilled in the 9 sciences and are considered an outstanding teacher of young monks. One night Mara appears to you and offers you a choice between breaking your vows by eating meat, drinking alcohol, or enjoying sexual pleasure with a villager. You choose....`,
     Choices :[{
@@ -66,10 +66,10 @@ const householder = {
     id: 'householder',
     title: 'practice secretly as a householder',
     map: {
-        bottom:'85%',
-        right:'44%',
+        bottom:'50%',
+        right:'60%',
     },
-    image: 'dudjom_dilgo.jpg',
+    image: './assets/journey/dudjom_dilgo.jpg',
     audio: 'children.wav',
     description:
         `Having received your Gurus pith heart instructions, you go off into the world, raise a family, and practice view, meditation, and conduct. You are emulating the path of the great Mahasiddhas of the path, and no one knows your are secretly a practitioner of the great Yogas.`,
@@ -93,10 +93,10 @@ const householder = {
         wisdom:-25 }]
     
 };
-const journey = [
+const journeys = [
     retreat,
     monastery,
     householder,
 ];
 
-export default journey;
+export default journeys;

@@ -10,7 +10,7 @@ loadProfile();
 
 const searchParams = new URLSearchParams(window.location.search);
 const journeyId = searchParams.get('id');
-const journeys = findById(journeys, journeyId);
+const journey = findById(journeys, journeyId);
 //if there is no such quest (why do we need this?)
 if (!journey) {
     window.location = '../map';
@@ -29,7 +29,7 @@ image.src = '../assets/journey/' + journey.image;
 audio.src = '../assets/journey/' + journey.audio;
 description.textContent = journey.description;
 
-// for each of the Journeys choices
+// for each of the Journey's choices
 for (let index = 0; index < journey.choices.length; index++) {
     const choice = journey.choices[index]; 
     const choiceDOM = createChoice(choice);
@@ -47,7 +47,7 @@ choiceForm.addEventListener('submit', function(event) {
     scoreJourney(choice, journey.id, user);
     saveUser(user);
 
-    audio.src = '../assets/journey/' + journey.action;
+    // audio.src = '../assets/journey/' + journey.action;
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;

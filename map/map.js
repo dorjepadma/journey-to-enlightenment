@@ -5,19 +5,19 @@ import journeys from '../data/journey-data.js';
 import loadProfile from '../common/load-profile.js';
 import createJourneyLink from './create-journey-link.js';
 import createCompletedJourney from './create-completed-journey.js';
-import hasCompletedAllJourney from './completed-all-journeys.js';
+import hasCompletedAllJourney from './has-completed-all-journeys.js';
 import isDead from '../common/is-dead.js';
 
 loadProfile(); // i predict we'll load the header on every page but the home page
 
 // go grab the user from localStorage
 const user = getUser;
-
 // if they're dead, or if they've completed all the quests
 if (isDead(user) || hasCompletedAllJourney(journeys, user)) {
     // send them to the results page
     window.location = '../results';
 }
+
 // getting some quest element from DOM
 const nav = document.getElementById('journeys');
 

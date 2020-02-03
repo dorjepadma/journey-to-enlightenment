@@ -16,7 +16,7 @@ function loadProfile() {
     }
     //copying object from Dom to Properties:
     name.textContent = user.name;
-    yogi.src = 'assets/yogi/' + user.incarnation + '.png';
+    yogi.src = 'assets/yogis/' + user.incarnation + '.png';
     wisdom.textContent = user.wisdom;
 // if they have died, say so in header.
     if (isDead(user)) {

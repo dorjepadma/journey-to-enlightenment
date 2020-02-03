@@ -16,18 +16,18 @@
     font-size: 12px;
 }
 
-#yogis {
+#yogi {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#yogis label {
+#yogi label {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 10px 10px;
 }
-#yogis input, #yogis img {
+#yogi input, #yogi img {
     margin: 0 7px;
 }

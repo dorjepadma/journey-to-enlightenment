@@ -13,4 +13,4 @@ export function getUser() {
 }
 
 // how is this getting the data for the function? oh, it operates as the function.
-// export default getUser;
+export default getUser;
