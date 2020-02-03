@@ -9,12 +9,13 @@ function makeUser(formData) {
         //what does completed do?
         completed: {}
     };
+
     return user;
 }
 
 export const newMakeUser = (formData) => ({
-    name: formData.get('incarnation'),
-    yogi: formData.get('incarnation'),
+    name: formData.get('name'),
+    incarnation: formData.get('incarnation'),
     merit: 50,
     wisdom: 0,
     completed: {}

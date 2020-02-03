@@ -9,7 +9,7 @@ function loadProfile() {
     const wisdom = document.getElementById('wisdom');
 
 // initialize and parse from local storage. Parse turns a string into an object.
-    const user = getUser;
+    const user = getUser();
 // here we determine if there is a user, and return to user page if no user. I do not understand the necessity of this.
     if (!user) {
         window.location = './';
@@ -21,7 +21,8 @@ function loadProfile() {
 // if they have died, say so in header.
     if (isDead(user)) {
         merit.textContent = 'you have been reborn in Samsara';
-    } else { merit.textContent = user.merit;
+    } else { 
+        merit.textContent = user.merit;
     }
 }
 export default loadProfile;

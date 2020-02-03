@@ -1,6 +1,6 @@
 #journey {
     position: relative;
-    background-image: url("../assets/kailash-inner-kora-trek.jpg");
+    background-image: url("assets/kailash.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 90vw;
@@ -12,9 +12,7 @@
     position: absolute;
     color: white;
     text-shadow: 1px 1px 1px black;
-    font: Garamond;
-    font-size: 24px;
-    
+   
 }
 .journey.completed {
     color: beige;
@@ -22,6 +20,6 @@
 
 }
 .completed:after {
-    content: "?"
+    content: ' ✔'
     /* what the hell is this check thingy? */
 }

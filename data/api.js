@@ -6,11 +6,11 @@ export function saveUser(user) {
 }
 
 export function getUser() {
-    const json = localStorage.getItem(user);
+    const json = localStorage.getItem('user');
     if (!json) return null;
     const user = JSON.parse(json);
     return user;
 }
 
 // how is this getting the data for the function? oh, it operates as the function.
-export default getUser;
+// export default getUser;

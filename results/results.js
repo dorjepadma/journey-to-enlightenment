@@ -1,6 +1,6 @@
   
 import loadProfile from '../common/load-profile.js';
-import getUser from '../data/api.js';
+import { getUser } from '../data/api.js';
 import scoreMerit from './score-merit.js';
 import scoreWisdom from './score-wisdom.js';
 import { meritMessages, aliveWisdomMessages, deadWisdomMessages } from './messages.js';
@@ -16,7 +16,7 @@ const wisdomResult = scoreWisdom(user.wisdom);
 const meritMessage = meritMessages[meritResult];
 
 let wisdomMessages = null;
-if (meritResult === 'isDead') {
+if (meritResult === 'dead') {
     wisdomMessages = deadWisdomMessages;
 }
 else {
