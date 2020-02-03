@@ -6,7 +6,7 @@
 .text-prompt label {
     display: block;
     margin-bottom: 5p;
-    font-size: 12px;
+    font-size: 1.1em;
     font-weight: bolder;
 }
 
@@ -16,18 +16,18 @@
     font-size: 12px;
 }
 
-#yogi {
+#yogis {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#yogi label {
+#yogis label {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 10px 10px;
 }
-#yogi input, #yogi img {
+#yogis input, #yogis img {
     margin: 0 7px;
 }
