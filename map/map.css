@@ -1,0 +1,25 @@
+#journey {
+    position: relative;
+    background-image: url("assets/kailash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    Height: calc(90vw * 642/980);
+    margin: auto;
+}
+
+.journey {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+   
+}
+.journey.completed {
+    color: beige;
+    font-size: 12px;
+
+}
+.completed:after {
+    content: ' ✔'
+    /* what the hell is this check thingy? */
+}
